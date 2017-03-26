@@ -24,6 +24,11 @@
 	padding-top: 20px;
 }
 
+#nav-header {
+	display: block;
+	height: 64px;
+}
+
 html, body {
   width:100%;
   height:100%;

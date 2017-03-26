@@ -6,10 +6,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Frode Myklebust">
 		<title><%= title %></title>
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href="css/materialize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
-		<script src="js/materialize.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/rartist.js"></script>
+		<script src="js/materialize.js"></script>
 	</head>
 	<body class="white">
 		
@@ -17,6 +19,18 @@
 			<div class="nav-wrapper light-blue darken-4">
 				<div class="container">
 					<a href="#" class="brand-logo">rartist</a>
+					<a href="#" data-activates="mobile-nav" class="button-collapse right"><i class="material-icons">menu</i></a>
+					<ul class="right hide-on-med-and-down">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="https://github.com/famyklebust/rartist">GitHub</a></li>
+					</ul>
+					<ul class="side-nav" id="mobile-nav">
+						<li id="nav-header" class="light-blue darken-4"></li>
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="https://github.com/famyklebust/rartist">GitHub</a></li>
+					</ul>
 				</div>
 			</div>
 		</nav>

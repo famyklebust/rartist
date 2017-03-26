@@ -42,10 +42,12 @@
 						<h1 class="white-text valign">rartist</h1>
 						<p class="flow-text white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit et leo sit amet consectetur. Praesent pretium consequat ante sit amet eleifend. Duis ultricies lacus nibh, vitae aliquam quam molestie ut.</p>
 						<%if (!lastfmUser) { %>
-						<a id="full-height-hero-button" class="btn-large hoverable red" href="#lastfm-modal"><i class="material-icons left">settings</i>Set Last.fm username</a>
+						<a id="full-height-hero-button" class="btn-large red" href="#lastfm-modal"><i class="material-icons left">settings</i>Set Last.fm username</a>
+						<a id="full-height-hero-button" class="btn-large disabled  light-blue" href="#"><i class="material-icons left">play_arrow</i>Get recommendations</a>
 						<% } %>
 						<%if (lastfmUser) { %>
-						<a id="full-height-hero-button" class="btn-large hoverable green"><i class="material-icons left">person</i><%= lastfmUser %></a>
+						<a id="full-height-hero-button" class="btn-large green" href="#lastfm-modal"><i class="material-icons left">person</i><%= lastfmUser %></a>
+						<a id="full-height-hero-button" class="btn-large light-blue" href="/recommend"><i class="material-icons left">play_arrow</i>Get recommendations</a>
 						<% } %>
 					</div>
 				</div>
@@ -56,19 +58,18 @@
 			<div class="modal-content center">
 				<h4 class="">What's your Last.fm username?</h4>
 				<div class="divider"></div>
-				<p class="flow-text left-align">It's difficult to recommend music without knowing what you listen to.</p>
-				<p class="flow-text left-align">Set your Last.fm username below, and we're off. You can always change it later.</p>
-				<div class="row">
-					<form class="col l6 m8 s12 offset-l3 offset-m2">
-						<div class="row">
+				<p class="flow-text left-align">It's difficult to recommend music without knowing what you like. Set your Last.fm username below, and we're off. You can always change it later.</p>
+				<div id="modal-row" class="row">
+					<form action="/" method="post" class="col l6 m8 s12 offset-l3 offset-m2">
+						<div id="modal-row" class="row">
 							<div class="input-field">
-								<input id="username" type="text" class="validate">
+								<input name="username" type="text" class="validate">
 								<label for="username" class="left-align">Last.fm username</label>
 							</div>
+							<button name="action" type="submit" id="modal-button" class="modal-action modal-close btn green">Set username</button>
 						</div>
 					</form>
 				</div>
-				<a href="#!" class="modal-action modal-close btn green">Set username</a>
 			</div>
 		</div>
 

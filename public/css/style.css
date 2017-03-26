@@ -14,14 +14,24 @@
 #full-height-hero-content {
 	background-color: rgba(1, 87, 155, 0.3);
 	border-radius: 2px;
+	padding-bottom: 25px;
 }
 
 #full-height-hero-button {
-	margin-bottom: 25px;
+	margin: 5px;
 }
 
 #album-row {
 	padding-top: 20px;
+}
+
+#modal-row {
+	margin-bottom: 0px;
+}
+
+#modal-button {
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 #nav-header {

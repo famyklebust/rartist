@@ -1,0 +1,25 @@
+{
+  "name": "rartist",
+  "version": "1.0.0",
+  "description": "Artist and album recommendations from Last.fm",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/famyklebust/rartist.git"
+  },
+  "author": "Frode Myklebust <myklebust89@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/famyklebust/rartist#readme",
+  "bugs": {
+    "url": "https://github.com/famyklebust/rartist/issues"
+  },
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "request": "^2.81.0"
+  }
+}
